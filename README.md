@@ -9,7 +9,7 @@
 ``` ruby
 label.font = [UIFont fontWithName:@"fontName" size:18.0f];
 ```
-- 支持长按赋值操作,可以在手机上面预览,复制字体名字
+- 支持长按复制操作,可以在手机上面预览,复制字体名字
 
 ### 预览GIF
 
