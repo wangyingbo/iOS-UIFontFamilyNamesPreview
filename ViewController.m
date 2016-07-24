@@ -7,6 +7,7 @@
 //
 
 #import "ViewController.h"
+#import "DetailViewController.h"
 
 @interface ViewController ()<UITableViewDelegate,UITableViewDataSource>
 
@@ -27,7 +28,7 @@
         _tableView.delegate   = self;
         _tableView.dataSource = self;
         _tableView.rowHeight  = 80.0f;
-        _tableView.backgroundColor = [UIColor clearColor];
+        _tableView.backgroundColor = [UIColor colorWithRed:1.00 green:0.99 blue:0.92 alpha:1.00];
         [self.view addSubview:_tableView];
     }
     
@@ -69,6 +70,9 @@
     
     [self tableView];
     
+    UIBarButtonItem *item = [[UIBarButtonItem alloc] initWithTitle:@"" style:UIBarButtonItemStylePlain target:nil action:nil];
+    self.navigationItem.backBarButtonItem = item;
+
 }
 
 // 设置导航栏字体方法
@@ -111,10 +115,14 @@
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
     
     [tableView deselectRowAtIndexPath:indexPath animated:YES];
-  
-    [self setNavigationTitleWithIndexInData:indexPath.row];
 
-     NSLog(@"当前点击的字体是:   %@",self.data[indexPath.row]);
+    NSLog(@"当前点击的字体是:   %@",self.data[indexPath.row]);
+    
+    DetailViewController *detailVC = [[DetailViewController alloc] init];
+    
+    detailVC.font = self.data[indexPath.row];
+    
+    [self.navigationController pushViewController:detailVC animated:YES];
 }
 
 
