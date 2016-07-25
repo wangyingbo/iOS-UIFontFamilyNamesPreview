@@ -22,5 +22,8 @@ label.font = [UIFont fontWithName:@"fontName" size:18.0f];
 
 ![Alt text](http://ww2.sinaimg.cn/large/70421ae5jw1f65i4cho4kg20df0j8kjn.gif)
 
+### 如果能帮得上您，希望能随手给个星星（star）~
+
+
 ### License
 MIT
