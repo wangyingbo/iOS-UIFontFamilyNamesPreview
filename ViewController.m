@@ -70,7 +70,7 @@
     
     [self tableView];
     
-    UIBarButtonItem *item = [[UIBarButtonItem alloc] initWithTitle:@"" style:UIBarButtonItemStylePlain target:nil action:nil];
+    UIBarButtonItem *item = [[UIBarButtonItem alloc] initWithTitle:@"" style:UIBarButtonItemStylePlain target:nil action:nil]; // 返回按钮
     self.navigationItem.backBarButtonItem = item;
 
 }

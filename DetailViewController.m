@@ -32,7 +32,7 @@
     self.navigationItem.titleView = label;
     
     title = [NSArray array];
-    title = @[@"0 1 2 3 4 5 6 7 8 9\n",@"a b c d e f g h i j k l m n o p q r s t u v w x y z\nA B C D E F G H I J K L M N O P Q R S T U V W X Y Z",@"螺旋爆炸，病房K歌，灵堂酒会，丧宴烤尸，\n送葬摇滚，灵车漂移，坟头蹦迪，骨灰拌饭，\n祖坟歌会，宗庙拍片，尸块养猪，脑浆浇花，\n灵堂派对，葬礼庆典，骨髓煮汤，棺木开花。\n"];
+    title = @[@"0 1 2 3 4 5 6 7 8 9\n",@"a b c d e f g h i j k l m n o p q r s t u v w x y z\nA B C D E F G H I J K L M N O P Q R S T U V W X Y Z",@"螺旋爆炸，病房K歌， 灵堂酒会，丧宴烤尸，\n送葬摇滚，灵车漂移，坟头蹦迪，骨灰拌饭，\n祖坟歌会，宗庙拍片，尸块养猪，脑浆浇花，\n灵堂派对，葬礼庆典，骨髓煮汤，棺木开花。\n"];
     
     [self createLabel];
 }
